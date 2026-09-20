@@ -1,0 +1,14 @@
+<![CDATA[
+bin/
+obj/
+node_modules/
+dist/
+coverage/
+.vs/
+.vscode/
+*.user
+*.suo
+appsettings.Local.json
+.env.local
+.DS_Store
+]]>

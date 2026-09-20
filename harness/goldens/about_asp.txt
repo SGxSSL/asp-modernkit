@@ -1,0 +1,101 @@
+STATUS: 200
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>About | ASP VBScript CMS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="The worlds first true content management system written entirely on Classic ASP (VBScript)." />
+<meta name="keywords" content="classic asp cms content management system vbscript jscript asp3.0" />
+<meta name="copyright" content="Copyright 2026 ASP VBScript CMS"/>
+<meta name="copyright" content="SITE DESIGN Copyright 2026 ASP VBScript CMS"/>
+<meta name="author" content="ASP VBScript CMS"/>
+<meta name="author" content="James Wilson"/>
+<meta name="ROBOTS" content="INDEX, FOLLOW"/>
+<meta name="robots" content="All"/>
+<meta name="revisit-after" content="1 days"/>
+<meta name="rating" content="GENERAL"/>
+<meta name="distribution" content="Global"/>
+<meta name="resource-type" content="document"/>
+<meta http-equiv="imagetoolbar" content="no"/>
+<meta http-equiv="content-language" content="en-us"/>
+<meta http-equiv="content-style-type" content="text/css"/>
+<meta http-equiv="content-script-type" content="text/javascript"/>
+<link rel="shortcut icon" href="http://localhost/cms/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/cms/styles/main.css" />
+
+<link rel="stylesheet" type="text/css" href="http://localhost/cms/core/assets/style/debug.css" />
+
+
+
+</head>
+<body>
+<ul class="a11y">
+<li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
+<li><a href="#main" title="Skip to content" accesskey="s">Skip to content</a></li>
+</ul>
+<div id="page">
+ <div id="header" class="clearfix">
+    <a href="http://localhost/cms" title="ASP VBScript CMS: Download your free Classic ASP CMS today!" class="logo"><img class="logo" src="http://localhost/cms/images/logo.gif" alt="ASP VBScript CMS: Download your free Classic ASP CMS today!" title="ASP VBScript CMS: Download your free Classic ASP CMS today!"/></a>
+
+  <hr class="a11y"/>
+ </div>
+ <div id="content" class="clearfix">
+  <div id="nav">
+   
+
+  <div><div>
+  <div class="wrapper clearfix">
+   <ul id="menu"
+   ><li><span></span><a href="http://localhost/cms/" title="Welcome to Content Management System on Classic ASP" class="site-nav">Home</a></li
+   ><li class=" current"><span></span><strong><a href="http://localhost/cms/about.asp" class="site-nav">About</a></strong></li
+   ><li><span></span><a href="http://localhost/cms/testimonials.asp" class="site-nav">Testimonials</a></li
+   ><li><span></span><a href="http://localhost/cms/contact.asp" class="site-nav">Contact Us</a></li
+   ></ul>
+
+  </div>
+
+  </div></div>
+
+
+   <hr class="a11y"/>
+  </div>
+  <div id="main" class="clearfix">
+   
+<div class="first"><div><div class="wrapper">
+<h1>About Content Management System on Classic ASP</h1>
+<h2 class="alert">This page needs your attention!</h2><p>This is boilerplate content.  Please log into the <a href="http://localhost/cms/admin">web admin tool</a> to create content for this page.</p>
+<br clear="all"/>
+</div></div></div>
+
+   <hr class="a11y"/>
+  </div>
+  <div id="sub">
+   
+   <hr class="a11y"/>
+  </div>
+  <div id="local">
+   
+   <hr class="a11y"/>
+  </div>
+ </div>
+ <div id="footer" class="clearfix">
+  <div id="ft-content"><div><div class="wrapper">
+<p class="clearfix">
+<span class="copyright">&copy; 2026&nbsp;ASP VBScript CMS</span>
+<span class="footer-links"><a href="http://localhost/cms/legal/privacy.asp" title="Our Privacy Policy">Privacy Policy</a> | <a href="http://localhost/cms/legal/terms.asp" title="Our Terms of Use">Terms of Use</a></span>
+<span class="shameless-plug">Powered by <a href="http://asp-vbscript-cms.googlecode.com" title="ASP VBScript CMS">ASP VBScript CMS</a></span>
+</p>
+</div></div></div>
+
+
+ </div>
+</div>
+<div id="extra1"></div>
+<div id="extra2"></div>
+<div id="extra3"></div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+node_modules/
+bin/
+obj/
+.env
+.vs/
+*.user
+*.suo
+output_*/backend/bin/
+output_*/backend/obj/
+output_*/frontend/node_modules/
+__pycache__/
+*.pyc
+slickcms_facts.json

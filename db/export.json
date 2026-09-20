@@ -1,0 +1,1329 @@
+{
+  "tables": [
+    {
+      "name": "tblForms",
+      "columns": [
+        {
+          "name": "FieldID",
+          "type": 3
+        },
+        {
+          "name": "FormID",
+          "type": 3
+        },
+        {
+          "name": "FieldName",
+          "type": 202
+        },
+        {
+          "name": "FieldLabel",
+          "type": 202
+        },
+        {
+          "name": "FieldType",
+          "type": 202
+        },
+        {
+          "name": "FieldValue",
+          "type": 203
+        },
+        {
+          "name": "FieldValidation",
+          "type": 203
+        },
+        {
+          "name": "FieldDescription",
+          "type": 203
+        },
+        {
+          "name": "CustomAttributes",
+          "type": 202
+        },
+        {
+          "name": "FieldSortOrder",
+          "type": 3
+        },
+        {
+          "name": "CreatedDate",
+          "type": 7
+        },
+        {
+          "name": "ModifiedDate",
+          "type": 7
+        }
+      ],
+      "rows": [
+        {
+          "FieldID": "1",
+          "FormID": "1",
+          "FieldName": "form_name",
+          "FieldLabel": "Contact Us Form",
+          "FieldType": "hidden",
+          "FieldValue": "email",
+          "FieldValidation": null,
+          "FieldDescription": "<h2>Contact Us</h2><p>We are happy to hear from you! Send us your questions, comments, or feedback.</p>",
+          "CustomAttributes": "simple",
+          "FieldSortOrder": "0",
+          "CreatedDate": "5/30/2007 9:06:15 AM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "2",
+          "FormID": "1",
+          "FieldName": "name",
+          "FieldLabel": "Name",
+          "FieldType": "text",
+          "FieldValue": null,
+          "FieldValidation": "required length:0,30",
+          "FieldDescription": null,
+          "CustomAttributes": null,
+          "FieldSortOrder": "1",
+          "CreatedDate": "5/30/2007 9:06:55 AM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "3",
+          "FormID": "1",
+          "FieldName": "email",
+          "FieldLabel": "Email",
+          "FieldType": "text",
+          "FieldValue": null,
+          "FieldValidation": "required email",
+          "FieldDescription": null,
+          "CustomAttributes": null,
+          "FieldSortOrder": "2",
+          "CreatedDate": "5/30/2007 9:11:03 AM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "4",
+          "FormID": "1",
+          "FieldName": "message",
+          "FieldLabel": "Message",
+          "FieldType": "textarea",
+          "FieldValue": null,
+          "FieldValidation": "required length:10,1000",
+          "FieldDescription": null,
+          "CustomAttributes": "rows=\"8\"",
+          "FieldSortOrder": "3",
+          "CreatedDate": "5/30/2007 9:14:57 AM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "5",
+          "FormID": "1",
+          "FieldName": "submit",
+          "FieldLabel": "&raquo; SUBMIT",
+          "FieldType": "submit",
+          "FieldValue": null,
+          "FieldValidation": null,
+          "FieldDescription": null,
+          "CustomAttributes": null,
+          "FieldSortOrder": "4",
+          "CreatedDate": "6/19/2007 4:53:46 PM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "7",
+          "FormID": "7",
+          "FieldName": "form_name",
+          "FieldLabel": "Form register",
+          "FieldType": "hidden",
+          "FieldValue": "subscribe",
+          "FieldValidation": null,
+          "FieldDescription": "<h2>NEWSLETTER</h2><p>Enter your Email to subscribe to our newsletter.</p>",
+          "CustomAttributes": "simple",
+          "FieldSortOrder": "0",
+          "CreatedDate": "7/19/2007 3:51:15 PM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "8",
+          "FormID": "7",
+          "FieldName": "mailaccount_r",
+          "FieldLabel": "Email",
+          "FieldType": "text",
+          "FieldValue": null,
+          "FieldValidation": "required email",
+          "FieldDescription": null,
+          "CustomAttributes": null,
+          "FieldSortOrder": "1",
+          "CreatedDate": "7/19/2007 3:51:15 PM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "9",
+          "FormID": "7",
+          "FieldName": "submit",
+          "FieldLabel": "Subscribe",
+          "FieldType": "submit",
+          "FieldValue": null,
+          "FieldValidation": "ok1",
+          "FieldDescription": "<a href=\"{SITEURL}/unsubcribe.asp\" title=\"Click here to unsubscribe\">Click here to Unsubscribe</a>",
+          "CustomAttributes": null,
+          "FieldSortOrder": "3",
+          "CreatedDate": "7/19/2007 3:51:15 PM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "10",
+          "FormID": "7",
+          "FieldName": "mailaccount2_r",
+          "FieldLabel": "Confirm Email",
+          "FieldType": "text",
+          "FieldValue": null,
+          "FieldValidation": "required email",
+          "FieldDescription": null,
+          "CustomAttributes": "onblur=\"requireConfirmation(this,document.getElementById(mailaccount_r.id))\"",
+          "FieldSortOrder": "2",
+          "CreatedDate": "7/19/2007 3:51:15 PM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "11",
+          "FormID": "7",
+          "FieldName": "FBMLNAME",
+          "FieldLabel": null,
+          "FieldType": "hidden",
+          "FieldValue": "newsletter@example.com",
+          "FieldValidation": null,
+          "FieldDescription": null,
+          "CustomAttributes": null,
+          "FieldSortOrder": "4",
+          "CreatedDate": "7/19/2007 3:51:15 PM",
+          "ModifiedDate": null
+        },
+        {
+          "FieldID": "16",
+          "FormID": "7",
+          "FieldName": "subscribe_r",
+          "FieldLabel": null,
+          "FieldType": "hidden",
+          "FieldValue": "subscribe",
+          "FieldValidation": null,
+          "FieldDescription": null,
+          "CustomAttributes": "checked=\"checked\"",
+          "FieldSortOrder": "9",
+          "CreatedDate": "7/19/2007 3:51:15 PM",
+          "ModifiedDate": null
+        }
+      ]
+    },
+    {
+      "name": "tblGlobalSettings",
+      "columns": [
+        {
+          "name": "SettingId",
+          "type": 3
+        },
+        {
+          "name": "SettingCategory",
+          "type": 202
+        },
+        {
+          "name": "SettingName",
+          "type": 202
+        },
+        {
+          "name": "SettingValue",
+          "type": 203
+        },
+        {
+          "name": "ValueType",
+          "type": 202
+        },
+        {
+          "name": "ValidationRule",
+          "type": 202
+        },
+        {
+          "name": "SettingDescription",
+          "type": 203
+        },
+        {
+          "name": "SortOrder",
+          "type": 3
+        },
+        {
+          "name": "CreationDate",
+          "type": 7
+        },
+        {
+          "name": "ModifiedDate",
+          "type": 7
+        }
+      ],
+      "rows": [
+        {
+          "SettingId": "1",
+          "SettingCategory": "Company",
+          "SettingName": "Company Name",
+          "SettingValue": "ASP VBScript CMS",
+          "ValueType": "text",
+          "ValidationRule": "required",
+          "SettingDescription": "Your company's name. <strong>This setting is required.</strong>",
+          "SortOrder": "2",
+          "CreationDate": "2/21/2007 5:40:21 PM",
+          "ModifiedDate": "3/13/2007 7:49:07 PM"
+        },
+        {
+          "SettingId": "2",
+          "SettingCategory": "General",
+          "SettingName": "Site Name",
+          "SettingValue": "Content Management System on Classic ASP",
+          "ValueType": "text",
+          "ValidationRule": "required",
+          "SettingDescription": "Your website's formal name, as it should be displayed in page headings and used throughout the website. <strong>This setting is required.</strong>",
+          "SortOrder": "1",
+          "CreationDate": "2/21/2007 5:40:29 PM",
+          "ModifiedDate": "7/3/2007 3:37:32 PM"
+        },
+        {
+          "SettingId": "3",
+          "SettingCategory": "General",
+          "SettingName": "Site Shortname",
+          "SettingValue": "VBScript CMS",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "If your Site Name is very long, you can specify an abbreviated or shortened form, which is preferrably used in specific places where space matters.",
+          "SortOrder": "4",
+          "CreationDate": "2/21/2007 5:40:36 PM",
+          "ModifiedDate": "7/3/2007 3:37:32 PM"
+        },
+        {
+          "SettingId": "4",
+          "SettingCategory": "General",
+          "SettingName": "Site Title",
+          "SettingValue": "ASP VBScript CMS",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "The website title appears in the title-bar window frame of your webbrowser. If left empty will use the <strong>Site Name</strong> variable.",
+          "SortOrder": "3",
+          "CreationDate": "2/21/2007 5:40:44 PM",
+          "ModifiedDate": "7/3/2007 3:37:32 PM"
+        },
+        {
+          "SettingId": "5",
+          "SettingCategory": "General",
+          "SettingName": "Site Slogan",
+          "SettingValue": "Download your free Classic ASP CMS today!",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "The site slogan is simply a \"sub-heading\" for your website. The slogan generally appears as a smaller-sized text along side the larger more emphasized 'Site Name'. Depending on your website's layout, this may or may not appear in the Heading of each page and in customer email inquiries.",
+          "SortOrder": "2",
+          "CreationDate": "2/21/2007 5:41:05 PM",
+          "ModifiedDate": "7/3/2007 3:37:32 PM"
+        },
+        {
+          "SettingId": "6",
+          "SettingCategory": "General",
+          "SettingName": "Site Keywords",
+          "SettingValue": "classic asp cms content management system vbscript jscript asp3.0",
+          "ValueType": "textarea",
+          "ValidationRule": "simple",
+          "SettingDescription": "A comma separated list of general, site-wide keywords to be included in meta tags for every page in the site. Meta tags are visible to search engines.",
+          "SortOrder": "6",
+          "CreationDate": "2/21/2007 5:41:11 PM",
+          "ModifiedDate": "1/8/2007 8:41:48 PM"
+        },
+        {
+          "SettingId": "7",
+          "SettingCategory": "General",
+          "SettingName": "Site Description",
+          "SettingValue": "The worlds first true content management system written entirely on Classic ASP (VBScript).",
+          "ValueType": "textarea",
+          "ValidationRule": "simple",
+          "SettingDescription": "This description is included in meta tags for every page in the site. Meta tags are visible to search engines.",
+          "SortOrder": "5",
+          "CreationDate": "2/21/2007 5:41:21 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "8",
+          "SettingCategory": "Advanced",
+          "SettingName": "Default Page Encoding",
+          "SettingValue": "iso-8859-1",
+          "ValueType": "text",
+          "ValidationRule": "required",
+          "SettingDescription": "Sets the default page encoding for your website. <strong>This setting is required.</strong><p class=\"alert\">Advanced setting! Do not change unless you know what you are doing!</p>",
+          "SortOrder": "5",
+          "CreationDate": "2/21/2007 5:41:34 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "9",
+          "SettingCategory": "Advanced",
+          "SettingName": "Debug",
+          "SettingValue": "",
+          "ValueType": "checkbox",
+          "ValidationRule": null,
+          "SettingDescription": "Permits extra website developer information to be displayed on the live site.  <p class=\"alert\">Advanced setting! Do not change unless you know what you are doing!</p>",
+          "SortOrder": "3",
+          "CreationDate": "2/21/2007 5:41:45 PM",
+          "ModifiedDate": "11/17/2008 4:39:23 PM"
+        },
+        {
+          "SettingId": "10",
+          "SettingCategory": "Advanced",
+          "SettingName": "Admin Email",
+          "SettingValue": "webmaster@yourdomain.com",
+          "ValueType": "text",
+          "ValidationRule": "email",
+          "SettingDescription": "The email address of the person in charge of maintaining this site. This email will never be displayed on the website.",
+          "SortOrder": "4",
+          "CreationDate": "2/21/2007 5:42:02 PM",
+          "ModifiedDate": "7/19/2007 1:29:23 PM"
+        },
+        {
+          "SettingId": "11",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Email",
+          "SettingValue": "asp-vbscript-cms@gmail.com",
+          "ValueType": "text",
+          "ValidationRule": "email",
+          "SettingDescription": "A general contact email address where all website form correspondence gets sent. Note: This may also be a comma-separated list of multiple email addresses.",
+          "SortOrder": "1",
+          "CreationDate": "2/21/2007 5:42:19 PM",
+          "ModifiedDate": "7/19/2007 1:29:23 PM"
+        },
+        {
+          "SettingId": "12",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Address1",
+          "SettingValue": "123 Main St.",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "The Company's contact address. This will be displayed on the website's contact page.",
+          "SortOrder": "3",
+          "CreationDate": "2/21/2007 5:42:26 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "13",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Address2",
+          "SettingValue": "Suite 101",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": null,
+          "SortOrder": "4",
+          "CreationDate": "2/21/2007 5:42:35 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "14",
+          "SettingCategory": "Company",
+          "SettingName": "Contact State",
+          "SettingValue": "Anystate",
+          "ValueType": "text",
+          "ValidationRule": "state",
+          "SettingDescription": "The Company's contact state. This will be displayed on the website's contact page.",
+          "SortOrder": "6",
+          "CreationDate": "2/21/2007 5:42:42 PM",
+          "ModifiedDate": "10/16/2007 6:54:12 PM"
+        },
+        {
+          "SettingId": "15",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Zip",
+          "SettingValue": "12345",
+          "ValueType": "text",
+          "ValidationRule": "zip",
+          "SettingDescription": "The Company's contact postal code. This will be displayed on the website's contact page.",
+          "SortOrder": "7",
+          "CreationDate": "2/21/2007 5:43:56 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "16",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Country",
+          "SettingValue": "USA",
+          "ValueType": "text",
+          "ValidationRule": "country",
+          "SettingDescription": "The Company's contact country. This will be displayed on the website's contact page.",
+          "SortOrder": "8",
+          "CreationDate": "2/21/2007 5:44:03 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "17",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Phone1",
+          "SettingValue": "800-123-4567",
+          "ValueType": "text",
+          "ValidationRule": "phone",
+          "SettingDescription": "The Company's contact phone number. This will be displayed on the website's contact page.",
+          "SortOrder": "9",
+          "CreationDate": "2/21/2007 5:44:12 PM",
+          "ModifiedDate": "6/11/2007 12:49:20 PM"
+        },
+        {
+          "SettingId": "18",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Phone2",
+          "SettingValue": "555-123-4567",
+          "ValueType": "text",
+          "ValidationRule": "phone",
+          "SettingDescription": null,
+          "SortOrder": "10",
+          "CreationDate": "2/21/2007 5:44:29 PM",
+          "ModifiedDate": "6/11/2007 12:47:40 PM"
+        },
+        {
+          "SettingId": "19",
+          "SettingCategory": "Company",
+          "SettingName": "Contact Fax",
+          "SettingValue": "555-123-4567",
+          "ValueType": "text",
+          "ValidationRule": "phone",
+          "SettingDescription": "The Company's contact fax number. This will be displayed on the website's contact page.",
+          "SortOrder": "11",
+          "CreationDate": "2/21/2007 5:44:34 PM",
+          "ModifiedDate": "6/11/2007 12:47:40 PM"
+        },
+        {
+          "SettingId": "20",
+          "SettingCategory": "Company",
+          "SettingName": "Default Area Code",
+          "SettingValue": "555",
+          "ValueType": "text",
+          "ValidationRule": "number",
+          "SettingDescription": "The default area code is appended to a phone number when someone fills out a form on your website with a 7 digit number.",
+          "SortOrder": "12",
+          "CreationDate": "2/21/2007 6:00:21 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "21",
+          "SettingCategory": "Correspondence",
+          "SettingName": "Email Intro",
+          "SettingValue": "The following customer inquiry was submitted online:",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "Text pre-pended to the content of all emails when someone sends in a feedback or submits a contact form on your website.",
+          "SortOrder": "2",
+          "CreationDate": "2/21/2007 6:06:21 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "22",
+          "SettingCategory": "Correspondence",
+          "SettingName": "Subjectline Prefix",
+          "SettingValue": "[{SHORTNAME} site]",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "The text pre-pended to the subjectline of all emails sent from your website.  Examples could be:  [{SITENAME}], [{SHORTNAME}}],({COMPANY}), :::Your Special Message Here:::",
+          "SortOrder": "1",
+          "CreationDate": "2/21/2007 6:10:12 PM",
+          "ModifiedDate": "3/13/2007 7:49:07 PM"
+        },
+        {
+          "SettingId": "23",
+          "SettingCategory": "Correspondence",
+          "SettingName": "CC Sender",
+          "SettingValue": "1",
+          "ValueType": "checkbox",
+          "ValidationRule": null,
+          "SettingDescription": "If enabled, then a copy of the feedback/contact form submission is Carbon Copied to the person who filled out the form.",
+          "SortOrder": "4",
+          "CreationDate": "2/21/2007 6:10:52 PM",
+          "ModifiedDate": "2/28/2007 10:49:54 AM"
+        },
+        {
+          "SettingId": "25",
+          "SettingCategory": "Correspondence",
+          "SettingName": "Email Header Image",
+          "SettingValue": "{SITEURL}/images/mailheader.jpg",
+          "ValueType": "text",
+          "ValidationRule": "image",
+          "SettingDescription": "The absolute url to the image used as a header in Rich Text emails sent by your website. If left blank, no image will be used in email header",
+          "SortOrder": "3",
+          "CreationDate": "2/21/2007 6:16:24 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "26",
+          "SettingCategory": "General",
+          "SettingName": "Site Logo",
+          "SettingValue": "{SITEURL}/images/logo.gif",
+          "ValueType": "text",
+          "ValidationRule": "image",
+          "SettingDescription": "The absolute url to the image used as a logo on your website's pages. If left blank, no image will be used and the <strong>Site Name</strong> and <strong>Slogan</strong> will be used in place of the logo at the top of each page.",
+          "SortOrder": "7",
+          "CreationDate": "2/21/2007 6:25:19 PM",
+          "ModifiedDate": "11/3/2007 2:27:07 PM"
+        },
+        {
+          "SettingId": "27",
+          "SettingCategory": "Advanced",
+          "SettingName": "Enrich Form Widgets",
+          "SettingValue": "1",
+          "ValueType": "checkbox",
+          "ValidationRule": null,
+          "SettingDescription": "Permits use of advanced form widgets from the <a href=\"http://dojotoolkit.org\" title=\"click on the 'see it in action' tab once you are there\">Dojo framework</a> in place of regular form fields.",
+          "SortOrder": "2",
+          "CreationDate": "2/27/2007 2:26:21 PM",
+          "ModifiedDate": "10/18/2007 11:50:33 AM"
+        },
+        {
+          "SettingId": "31",
+          "SettingCategory": "Advanced",
+          "SettingName": "SMTP Host",
+          "SettingValue": "smtp.gmail.com",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": null,
+          "SortOrder": "6",
+          "CreationDate": "2/27/2007 10:18:06 PM",
+          "ModifiedDate": null
+        },
+        {
+          "SettingId": "32",
+          "SettingCategory": "General",
+          "SettingName": "Bookmark Icon",
+          "SettingValue": "{SITEURL}/favicon.ico",
+          "ValueType": "text",
+          "ValidationRule": "image",
+          "SettingDescription": "Also known as a \"favicon\",  this is the location of the image file that you will see in dirrection bar of the webbrowser as well as if you bookmark the website. The image file format typically has the file extension \".ico\"",
+          "SortOrder": "8",
+          "CreationDate": "3/13/2007 9:48:11 PM",
+          "ModifiedDate": "3/13/2007 10:42:10 PM"
+        },
+        {
+          "SettingId": "33",
+          "SettingCategory": "Advanced",
+          "SettingName": "Enabled Site",
+          "SettingValue": "1",
+          "ValueType": "checkbox",
+          "ValidationRule": null,
+          "SettingDescription": "Caution: deselecting this checkbox will disable all public site interaction, only site administrators will have access to the admin section.",
+          "SortOrder": "1",
+          "CreationDate": "7/11/2007 1:18:21 PM",
+          "ModifiedDate": "11/7/2007 1:40:14 PM"
+        },
+        {
+          "SettingId": "34",
+          "SettingCategory": "Company",
+          "SettingName": "Contact City",
+          "SettingValue": "Anycity",
+          "ValueType": "text",
+          "ValidationRule": null,
+          "SettingDescription": "The Company's contact city. This will be displayed on the website's contact page.",
+          "SortOrder": "5",
+          "CreationDate": "7/30/2007 5:45:08 PM",
+          "ModifiedDate": "10/16/2007 6:54:12 PM"
+        },
+        {
+          "SettingId": "35",
+          "SettingCategory": "Advanced",
+          "SettingName": "Google Analytics",
+          "SettingValue": "UA-0000000-XX",
+          "ValueType": "text",
+          "ValidationRule": "number",
+          "SettingDescription": "The code setup when registering a new profile in <a href=\"http://google.com/analytics\">Google Analytics</a>.",
+          "SortOrder": "7",
+          "CreationDate": "10/16/2007 6:56:17 PM",
+          "ModifiedDate": "10/16/2007 7:06:19 PM"
+        }
+      ]
+    },
+    {
+      "name": "tblLog",
+      "columns": [
+        {
+          "name": "Id",
+          "type": 3
+        },
+        {
+          "name": "Description",
+          "type": 203
+        },
+        {
+          "name": "Date",
+          "type": 7
+        }
+      ],
+      "rows": []
+    },
+    {
+      "name": "tblModules",
+      "columns": [
+        {
+          "name": "ID",
+          "type": 3
+        },
+        {
+          "name": "Active",
+          "type": 11
+        },
+        {
+          "name": "Name",
+          "type": 202
+        },
+        {
+          "name": "Description",
+          "type": 202
+        },
+        {
+          "name": "Type",
+          "type": 3
+        },
+        {
+          "name": "StyleID",
+          "type": 202
+        },
+        {
+          "name": "StyleClass",
+          "type": 202
+        },
+        {
+          "name": "StyleInline",
+          "type": 203
+        },
+        {
+          "name": "PageIDs",
+          "type": 202
+        },
+        {
+          "name": "CustomSettings",
+          "type": 203
+        },
+        {
+          "name": "SortOrder",
+          "type": 3
+        },
+        {
+          "name": "Location",
+          "type": 202
+        }
+      ],
+      "rows": [
+        {
+          "ID": "2",
+          "Active": true,
+          "Name": "What Our Customers Are Saying",
+          "Description": "Our clients testimonials.",
+          "Type": "3",
+          "StyleID": "",
+          "StyleClass": "",
+          "StyleInline": "",
+          "PageIDs": ":6:",
+          "CustomSettings": "",
+          "SortOrder": "0",
+          "Location": "main"
+        },
+        {
+          "ID": "3",
+          "Active": true,
+          "Name": "Feedback Form",
+          "Description": "Online contact form.",
+          "Type": "1",
+          "StyleID": "",
+          "StyleClass": "",
+          "StyleInline": "",
+          "PageIDs": ":2:",
+          "CustomSettings": "form_id{1}",
+          "SortOrder": "0",
+          "Location": "sub"
+        }
+      ]
+    },
+    {
+      "name": "tblModuleTypes",
+      "columns": [
+        {
+          "name": "Disabled",
+          "type": 11
+        },
+        {
+          "name": "ModID",
+          "type": 3
+        },
+        {
+          "name": "ModName",
+          "type": 203
+        },
+        {
+          "name": "ModHandler",
+          "type": 202
+        },
+        {
+          "name": "ModDescription",
+          "type": 203
+        }
+      ],
+      "rows": [
+        {
+          "Disabled": false,
+          "ModID": "1",
+          "ModName": "Web Form",
+          "ModHandler": "mod_form",
+          "ModDescription": "A module for inserting a form into a page."
+        },
+        {
+          "Disabled": true,
+          "ModID": "2",
+          "ModName": "Links",
+          "ModHandler": "mod_links",
+          "ModDescription": "A list of website links, allowing a name, <abbr title=\"Uniform Resource Locator; the location of a file on the web (eg, http://www.xyz.com/file.htm)\">URL</a>, and image."
+        },
+        {
+          "Disabled": false,
+          "ModID": "3",
+          "ModName": "Testimonials",
+          "ModHandler": "mod_testimonials",
+          "ModDescription": "A list of customer testimonials, allowing customer name, customer comments, location, and date."
+        },
+        {
+          "Disabled": true,
+          "ModID": "4",
+          "ModName": "Blog/Newsletter",
+          "ModHandler": "mod_blog",
+          "ModDescription": "A module for creating a blog or newsletter functionality; includes user/group administration and subscribe/unsubscribe functionality."
+        },
+        {
+          "Disabled": false,
+          "ModID": "5",
+          "ModName": "RSS Feed",
+          "ModHandler": "mod_rss",
+          "ModDescription": "A module for including the content of an RSS Feed on your site."
+        },
+        {
+          "Disabled": true,
+          "ModID": "6",
+          "ModName": "Poll",
+          "ModHandler": "mod_poll",
+          "ModDescription": "A module for creating and managing a poll."
+        },
+        {
+          "Disabled": true,
+          "ModID": "7",
+          "ModName": "Survey",
+          "ModHandler": "mod_survey",
+          "ModDescription": "A module for creating and managing a multi-step survey."
+        },
+        {
+          "Disabled": false,
+          "ModID": "8",
+          "ModName": "Products",
+          "ModHandler": "mod_products",
+          "ModDescription": "A module for displaying a product catalogue on your site."
+        },
+        {
+          "Disabled": false,
+          "ModID": "9",
+          "ModName": "Photo Gallery",
+          "ModHandler": "mod_gallery",
+          "ModDescription": "A module for displaying an image gallery on your site."
+        },
+        {
+          "Disabled": false,
+          "ModID": "10",
+          "ModName": "Random Content",
+          "ModHandler": "mod_random_content",
+          "ModDescription": "A module for selecting and displaying a random piece of content (currently only page content) from the database."
+        },
+        {
+          "Disabled": false,
+          "ModID": "11",
+          "ModName": "Product Categories",
+          "ModHandler": "mod_prod_categories",
+          "ModDescription": "A module for listing product categories"
+        },
+        {
+          "Disabled": false,
+          "ModID": "12",
+          "ModName": "HTML Snippet",
+          "ModHandler": "mod_html_snippet",
+          "ModDescription": "A module for adding a snippet of HTML code to a page in your site."
+        },
+        {
+          "Disabled": false,
+          "ModID": "13",
+          "ModName": "Banner Image",
+          "ModHandler": "mod_banner",
+          "ModDescription": "A module for displaying a banner on your site."
+        }
+      ]
+    },
+    {
+      "name": "tblPageContent",
+      "columns": [
+        {
+          "name": "ContentID",
+          "type": 3
+        },
+        {
+          "name": "PageID",
+          "type": 3
+        },
+        {
+          "name": "PageContent",
+          "type": 203
+        },
+        {
+          "name": "ModifiedDate",
+          "type": 7
+        }
+      ],
+      "rows": [
+        {
+          "ContentID": "1",
+          "PageID": "1",
+          "PageContent": "<h1>Welcome to {SITENAME}</h1>\r\n{BOILERPLATE_WARNING}\r\n\r\n{BOILERPLATE_CONTENT}",
+          "ModifiedDate": "2/8/2007 11:53:46 AM"
+        },
+        {
+          "ContentID": "2",
+          "PageID": "3",
+          "PageContent": "<h1>About {SITENAME}</h1>\r\n{BOILERPLATE_WARNING}",
+          "ModifiedDate": "2/22/2007 8:43:59 PM"
+        },
+        {
+          "ContentID": "3",
+          "PageID": "2",
+          "PageContent": "<h1>Contact Information</h1><p>{Contact Address1}<br>{Contact Address2}<br>{Contact City}, {Contact State} {Contact Zip}<br></p><h3>Phone:</h3> \r\n<p>{Contact Phone1} Toll Free<br>{Contact Phone2} Local<br>{Contact Fax} Fax<br></p><h3>Business Hours:</h3>",
+          "ModifiedDate": "3/9/2007 5:58:16 PM"
+        },
+        {
+          "ContentID": "4",
+          "PageID": "6",
+          "PageContent": "<h1>What Our Customers Are Saying</h1>",
+          "ModifiedDate": "5/29/2007 9:01:10 PM"
+        }
+      ]
+    },
+    {
+      "name": "tblPages",
+      "columns": [
+        {
+          "name": "PageID",
+          "type": 3
+        },
+        {
+          "name": "Active",
+          "type": 11
+        },
+        {
+          "name": "PageName",
+          "type": 202
+        },
+        {
+          "name": "PageFileName",
+          "type": 202
+        },
+        {
+          "name": "PageLinkHoverText",
+          "type": 202
+        },
+        {
+          "name": "PageDescription",
+          "type": 203
+        },
+        {
+          "name": "PageKeywords",
+          "type": 203
+        },
+        {
+          "name": "MainMenu",
+          "type": 11
+        },
+        {
+          "name": "PageTitle",
+          "type": 202
+        },
+        {
+          "name": "MenuIndex",
+          "type": 2
+        },
+        {
+          "name": "ParentPage",
+          "type": 3
+        },
+        {
+          "name": "Style",
+          "type": 202
+        },
+        {
+          "name": "CreateDate",
+          "type": 7
+        }
+      ],
+      "rows": [
+        {
+          "PageID": "1",
+          "Active": true,
+          "PageName": "Home",
+          "PageFileName": "default.asp",
+          "PageLinkHoverText": "Welcome to {SITENAME}",
+          "PageDescription": "",
+          "PageKeywords": "",
+          "MainMenu": true,
+          "PageTitle": "Classic ASP Content Management System for Quick & Easy Web Design.",
+          "MenuIndex": 1,
+          "ParentPage": "0",
+          "Style": "main",
+          "CreateDate": "1/10/2007 2:44:23 PM"
+        },
+        {
+          "PageID": "2",
+          "Active": true,
+          "PageName": "Contact Us",
+          "PageFileName": "contact.asp",
+          "PageLinkHoverText": "",
+          "PageDescription": "",
+          "PageKeywords": "",
+          "MainMenu": true,
+          "PageTitle": "Contact Us",
+          "MenuIndex": 4,
+          "ParentPage": "0",
+          "Style": "main-2col",
+          "CreateDate": "1/10/2007 2:44:55 PM"
+        },
+        {
+          "PageID": "3",
+          "Active": true,
+          "PageName": "About",
+          "PageFileName": "about.asp",
+          "PageLinkHoverText": "",
+          "PageDescription": "",
+          "PageKeywords": "",
+          "MainMenu": true,
+          "PageTitle": "About",
+          "MenuIndex": 2,
+          "ParentPage": "0",
+          "Style": "main",
+          "CreateDate": "1/10/2007 2:45:58 PM"
+        },
+        {
+          "PageID": "4",
+          "Active": true,
+          "PageName": "Terms of Service",
+          "PageFileName": "legal/terms.asp",
+          "PageLinkHoverText": "",
+          "PageDescription": "",
+          "PageKeywords": "",
+          "MainMenu": false,
+          "PageTitle": "Terms of Service",
+          "MenuIndex": 999,
+          "ParentPage": "0",
+          "Style": "main",
+          "CreateDate": "1/11/2007 5:51:54 PM"
+        },
+        {
+          "PageID": "5",
+          "Active": true,
+          "PageName": "Privacy Policy",
+          "PageFileName": "legal/privacy.asp",
+          "PageLinkHoverText": "",
+          "PageDescription": "",
+          "PageKeywords": "",
+          "MainMenu": false,
+          "PageTitle": "Privacy Policy",
+          "MenuIndex": 999,
+          "ParentPage": "0",
+          "Style": "main",
+          "CreateDate": "1/12/2007 12:08:54 PM"
+        },
+        {
+          "PageID": "6",
+          "Active": true,
+          "PageName": "Testimonials",
+          "PageFileName": "testimonials.asp",
+          "PageLinkHoverText": "",
+          "PageDescription": "",
+          "PageKeywords": "",
+          "MainMenu": true,
+          "PageTitle": "What Our Customers Are Saying",
+          "MenuIndex": 3,
+          "ParentPage": "0",
+          "Style": "main",
+          "CreateDate": "10/15/2007 11:31:37 AM"
+        }
+      ]
+    },
+    {
+      "name": "tblProducts",
+      "columns": [
+        {
+          "name": "Key",
+          "type": 3
+        },
+        {
+          "name": "PID",
+          "type": 202
+        },
+        {
+          "name": "Category",
+          "type": 202
+        },
+        {
+          "name": "Brand",
+          "type": 202
+        },
+        {
+          "name": "ProductLine",
+          "type": 202
+        },
+        {
+          "name": "ProductName",
+          "type": 202
+        },
+        {
+          "name": "Options",
+          "type": 202
+        },
+        {
+          "name": "ShortDescription",
+          "type": 202
+        },
+        {
+          "name": "LongDescription",
+          "type": 203
+        },
+        {
+          "name": "RetailPrice",
+          "type": 6
+        },
+        {
+          "name": "WholesalePrice",
+          "type": 6
+        },
+        {
+          "name": "Image1",
+          "type": 203
+        },
+        {
+          "name": "Image2",
+          "type": 203
+        },
+        {
+          "name": "Active",
+          "type": 11
+        },
+        {
+          "name": "Recommended",
+          "type": 11
+        },
+        {
+          "name": "Timestamp",
+          "type": 7
+        }
+      ],
+      "rows": []
+    },
+    {
+      "name": "tblTestimonials",
+      "columns": [
+        {
+          "name": "ID",
+          "type": 3
+        },
+        {
+          "name": "Active",
+          "type": 11
+        },
+        {
+          "name": "Name",
+          "type": 202
+        },
+        {
+          "name": "Email",
+          "type": 202
+        },
+        {
+          "name": "ShowEmail",
+          "type": 11
+        },
+        {
+          "name": "SortOrder",
+          "type": 3
+        },
+        {
+          "name": "Comments",
+          "type": 203
+        },
+        {
+          "name": "Location",
+          "type": 202
+        },
+        {
+          "name": "TestimonialDate",
+          "type": 7
+        },
+        {
+          "name": "Timestamp",
+          "type": 7
+        }
+      ],
+      "rows": [
+        {
+          "ID": "16",
+          "Active": true,
+          "Name": "Cicero",
+          "Email": "cicero@lipsum.org",
+          "ShowEmail": true,
+          "SortOrder": "0",
+          "Comments": "Sed nec dui. Aliquam erat volutpat. Nam a dui eu mi gravida ultricies. Mauris consequat lorem eu neque. Suspendisse nisi nisl, congue a, facilisis quis, pellentesque sed, massa. ",
+          "Location": "Nam a dui eu mi gravida ultricies. ",
+          "TestimonialDate": "1/1/2007",
+          "Timestamp": "8/9/2007 12:03:55 PM"
+        },
+        {
+          "ID": "17",
+          "Active": true,
+          "Name": "Cicero",
+          "Email": "cicero@lipsum.org",
+          "ShowEmail": true,
+          "SortOrder": "1",
+          "Comments": "Sed nec dui. Aliquam erat volutpat. Nam a dui eu mi gravida ultricies. Mauris consequat lorem eu neque. Suspendisse nisi nisl, congue a, facilisis quis, pellentesque sed, massa.",
+          "Location": "de Finibus Bonorum et Malorum, 45 BC",
+          "TestimonialDate": "1/1/2007",
+          "Timestamp": "10/18/2007 10:57:25 AM"
+        }
+      ]
+    },
+    {
+      "name": "tblUserRoles",
+      "columns": [
+        {
+          "name": "id",
+          "type": 3
+        },
+        {
+          "name": "Name",
+          "type": 202
+        },
+        {
+          "name": "Description",
+          "type": 203
+        },
+        {
+          "name": "Level",
+          "type": 3
+        }
+      ],
+      "rows": [
+        {
+          "id": "1",
+          "Name": "Administrator",
+          "Description": "Administrators have access to all site settings and can create,modify, and delete content.",
+          "Level": "100"
+        },
+        {
+          "id": "2",
+          "Name": "Manager",
+          "Description": "Managers have access to most site settings and can create, modify, and delete content",
+          "Level": "80"
+        },
+        {
+          "id": "3",
+          "Name": "Editor",
+          "Description": "Editors have limited access to administration and may only create and modify content.",
+          "Level": "40"
+        },
+        {
+          "id": "4",
+          "Name": "Registered",
+          "Description": "Registered users may only modify their own account settings.  They cannot log into the site administration.",
+          "Level": "20"
+        }
+      ]
+    },
+    {
+      "name": "tblUsers",
+      "columns": [
+        {
+          "name": "id",
+          "type": 3
+        },
+        {
+          "name": "UserID",
+          "type": 202
+        },
+        {
+          "name": "Password",
+          "type": 202
+        },
+        {
+          "name": "LastLogin",
+          "type": 7
+        },
+        {
+          "name": "Disabled",
+          "type": 11
+        },
+        {
+          "name": "Description",
+          "type": 203
+        },
+        {
+          "name": "FirstName",
+          "type": 202
+        },
+        {
+          "name": "SecondName",
+          "type": 202
+        },
+        {
+          "name": "Email",
+          "type": 202
+        },
+        {
+          "name": "Phone",
+          "type": 202
+        },
+        {
+          "name": "Address1",
+          "type": 202
+        },
+        {
+          "name": "Address2",
+          "type": 202
+        },
+        {
+          "name": "City",
+          "type": 202
+        },
+        {
+          "name": "State",
+          "type": 202
+        },
+        {
+          "name": "PostalCode",
+          "type": 202
+        },
+        {
+          "name": "Country",
+          "type": 202
+        },
+        {
+          "name": "Role",
+          "type": 3
+        }
+      ],
+      "rows": [
+        {
+          "id": "1",
+          "UserID": "admin",
+          "Password": "password",
+          "LastLogin": "11/8/2010",
+          "Disabled": false,
+          "Description": null,
+          "FirstName": "Site",
+          "SecondName": "Administrator",
+          "Email": "webmaster@example.com",
+          "Phone": null,
+          "Address1": null,
+          "Address2": null,
+          "City": null,
+          "State": null,
+          "PostalCode": null,
+          "Country": null,
+          "Role": "100"
+        }
+      ]
+    }
+  ]
+}

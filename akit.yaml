@@ -1,0 +1,18 @@
+# asp-modernkit root configuration
+
+project:
+  name: "Sonata ASP to .NET Modernization"
+  legacy_root: "d:/Sonata/asp/slickcms-classic-asp"
+  db_engine: "sqlite"
+  
+targets:
+  backend: "backend-dotnet-clean"
+  frontend: "frontend-react-ts"
+
+slices:
+  slickcms_test:
+    description: "Core CMS logic test slice for slickcms"
+    endpoints:
+      - "slickcms/slickcms.asp"
+      - "slickcms/user.asp"
+      - "slickcms/post.asp"

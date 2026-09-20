@@ -1,0 +1,226 @@
+STATUS: 200
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Contact Us | ASP VBScript CMS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="The worlds first true content management system written entirely on Classic ASP (VBScript)." />
+<meta name="keywords" content="classic asp cms content management system vbscript jscript asp3.0" />
+<meta name="copyright" content="Copyright 2026 ASP VBScript CMS"/>
+<meta name="copyright" content="SITE DESIGN Copyright 2026 ASP VBScript CMS"/>
+<meta name="author" content="ASP VBScript CMS"/>
+<meta name="author" content="James Wilson"/>
+<meta name="ROBOTS" content="INDEX, FOLLOW"/>
+<meta name="robots" content="All"/>
+<meta name="revisit-after" content="1 days"/>
+<meta name="rating" content="GENERAL"/>
+<meta name="distribution" content="Global"/>
+<meta name="resource-type" content="document"/>
+<meta http-equiv="imagetoolbar" content="no"/>
+<meta http-equiv="content-language" content="en-us"/>
+<meta http-equiv="content-style-type" content="text/css"/>
+<meta http-equiv="content-script-type" content="text/javascript"/>
+<link rel="shortcut icon" href="http://localhost/cms/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/cms/styles/main-2col.css" />
+
+<link rel="stylesheet" type="text/css" href="http://localhost/cms/core/assets/style/debug.css" />
+
+
+
+</head>
+<body>
+<ul class="a11y">
+<li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
+<li><a href="#main" title="Skip to content" accesskey="s">Skip to content</a></li>
+</ul>
+<div id="page">
+ <div id="header" class="clearfix">
+    <a href="http://localhost/cms" title="ASP VBScript CMS: Download your free Classic ASP CMS today!" class="logo"><img class="logo" src="http://localhost/cms/images/logo.gif" alt="ASP VBScript CMS: Download your free Classic ASP CMS today!" title="ASP VBScript CMS: Download your free Classic ASP CMS today!"/></a>
+
+  <hr class="a11y"/>
+ </div>
+ <div id="content" class="clearfix">
+  <div id="nav">
+   
+
+  <div><div>
+  <div class="wrapper clearfix">
+   <ul id="menu"
+   ><li><span></span><a href="http://localhost/cms/" title="Welcome to Content Management System on Classic ASP" class="site-nav">Home</a></li
+   ><li><span></span><a href="http://localhost/cms/about.asp" class="site-nav">About</a></li
+   ><li><span></span><a href="http://localhost/cms/testimonials.asp" class="site-nav">Testimonials</a></li
+   ><li class=" current"><span></span><strong><a href="http://localhost/cms/contact.asp" class="site-nav">Contact Us</a></strong></li
+   ></ul>
+
+  </div>
+
+  </div></div>
+
+
+   <hr class="a11y"/>
+  </div>
+  <div id="main" class="clearfix">
+   
+<div class="first"><div><div class="wrapper">
+<h1>Contact Information</h1><p>123 Main St.<br>Suite 101<br>Anycity, Anystate 12345<br></p><h3>Phone:</h3> 
+<p>800-123-4567 Toll Free<br>555-123-4567 Local<br>555-123-4567 Fax<br></p><h3>Business Hours:</h3>
+<br clear="all"/>
+</div></div></div>
+
+   <hr class="a11y"/>
+  </div>
+  <div id="sub">
+   
+<div><div><div class="wrapper">
+
+<h2>Contact Us</h2><p>We are happy to hear from you! Send us your questions, comments, or feedback.</p>
+
+		<style type="text/css">
+		/* form.css from Jeff Howden */
+* {
+margin: 0;
+padding: 0;
+}
+.form-errors li.error, form small.error {
+padding:0;
+}
+.form-errors a, .form-errors a:hover, .form-errors a:visited, .form-errors a:link {color:#EB2424;}
+form small.error, form label.required {
+font-weight:bold;
+}
+form div.error, form small.error, .form-errors li {
+background:none;
+}
+form small.error, .form-errors a {
+color:#EB2424;
+}
+input, select, textarea {
+width: 180px;
+padding:0.2em 3px;
+margin:0 0 0.3em;
+background:transparent url(../../core/assets/i/trans-white.png) repeat top left;
+border:1px solid #ccc;
+}
+label.empty {
+display:none;
+}
+input.inputFile {
+width: 180px;
+}
+input.readonly, select.readonly, textarea.readonly {
+ background:transparent url(../../core/assets/i/trans-gray.png) repeat top left;
+}
+input.inputCheckbox, input.inputRadio {
+  display: inline;
+  height: 14px;
+  width: 14px;
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+}
+div.submit {
+  width: auto;
+	display:inline;
+  padding: 0;
+}
+div.submit div {
+  display: inline;
+  float: left;
+  text-align: left;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+input.button {
+  color: #111;
+  width: auto;
+	padding: 0 .7em .1em;
+	margin-right:.1em;
+	border:2px outset black;
+	background-color: #eef;
+}
+div.submit div input.button {
+  float: right;
+  margin: 0 0 0 5px;
+}
+form div small {
+  display: block;
+  margin: 5px;
+  padding: 1px 3px;
+  font-size: 88%;
+  height: expression('1%');
+}
+div#content div.mail-success {
+ background:  url(../../core/assets/i/tango/large/mail-sent.png) top left no-repeat;
+ padding-left:3em;
+ min-height:33px;
+ _height:33px;
+}
+label {
+width:10ex;
+padding-right:0.5em;
+display:block;
+float:left;
+text-align:right;
+}
+ small,  input.inputSubmit {margin-left:14ex;}
+ div {margin-bottom:0.5em;}
+		-->
+		</style>
+		<script type="text/javascript" src="http://localhost/cms/core/assets/scripts/display.js"></script>
+<script type="text/javascript" src="http://localhost/cms/core/assets/scripts/form_validator.js"></script>
+<script type="text/javascript" src="http://localhost/cms/core/assets/scripts/form_field_count.js"></script>
+<div>
+<form action="?success" method="POST" id="Contact_Us_Form" class="autocheck" onsubmit="return autocheck(this)" onreset="return confirm('Really reset all form fields?')">
+<div style="display:none"><input type="hidden" name="form_name"  id="form_name" value="Contact_Us_Form"/></div>
+ <div class="required">
+  <label for="name" class="labelText required length:0,30" accesskey="1">Name</label>
+  <input  id="name" name="name"  type="text" class="required required length:0,30 inputText" value="" onKeyDown="textCounter(this,30);" onKeyUp="textCounter(this,30);" size="10" />
+ </div>
+ <div class="required">
+  <label for="email" class="labelText required email" accesskey="2">Email</label>
+  <input  id="email" name="email"  type="text" class="required required email inputText" value=""/>
+ </div>
+ <div class="required">
+  <label for="message" class="labelTextarea required length:10,1000" accesskey="3">Message</label>
+  <textarea id="message" name="message" class="required required length:10,1000 inputTextarea" cols="10" rows="8" onKeyDown="textCounter(this,1000);" onKeyUp="textCounter(this,1000);"></textarea>
+  <small>(<span id="message_count"></span> characters left)</small>
+ </div>
+ <div class="button submit ">
+  <input type="submit" class="button inputSubmit " value="&raquo; SUBMIT"/>
+ </div>
+</form>
+</div>
+
+
+</div></div></div>
+
+
+   <hr class="a11y"/>
+  </div>
+  <div id="local">
+   
+   <hr class="a11y"/>
+  </div>
+ </div>
+ <div id="footer" class="clearfix">
+  <div id="ft-content"><div><div class="wrapper">
+<p class="clearfix">
+<span class="copyright">&copy; 2026&nbsp;ASP VBScript CMS</span>
+<span class="footer-links"><a href="http://localhost/cms/legal/privacy.asp" title="Our Privacy Policy">Privacy Policy</a> | <a href="http://localhost/cms/legal/terms.asp" title="Our Terms of Use">Terms of Use</a></span>
+<span class="shameless-plug">Powered by <a href="http://asp-vbscript-cms.googlecode.com" title="ASP VBScript CMS">ASP VBScript CMS</a></span>
+</p>
+</div></div></div>
+
+
+ </div>
+</div>
+<div id="extra1"></div>
+<div id="extra2"></div>
+<div id="extra3"></div>
+
+</body>
+</html>

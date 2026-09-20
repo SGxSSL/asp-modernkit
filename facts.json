@@ -1,0 +1,514 @@
+{
+  "inventory": [
+    ".gitignore",
+    "comments.asp",
+    "contact.asp",
+    "content.asp",
+    "default.asp",
+    "errorexample.asp",
+    "errorhandler.asp",
+    "favicon.ico",
+    "footer.asp",
+    "global.asa",
+    "header.asp",
+    "license.txt",
+    "README.md",
+    "robots.txt",
+    "rss2.asp",
+    "server.asp",
+    "session.asp",
+    "sidebar.asp",
+    "sitemap.asp",
+    "slickcms.sln",
+    "Web.config",
+    "admin/categories.asp",
+    "admin/category.asp",
+    "admin/comment.asp",
+    "admin/comments.asp",
+    "admin/default.asp",
+    "admin/deletecategory.asp",
+    "admin/deletecomment.asp",
+    "admin/deletelink.asp",
+    "admin/deletepost.asp",
+    "admin/deleterelationship.asp",
+    "admin/deletetag.asp",
+    "admin/deleteuser.asp",
+    "admin/feeds.asp",
+    "admin/forgotpassword.asp",
+    "admin/link.asp",
+    "admin/links.asp",
+    "admin/login.asp",
+    "admin/logout.asp",
+    "admin/post.asp",
+    "admin/posts.asp",
+    "admin/register.asp",
+    "admin/relationship.asp",
+    "admin/relationships.asp",
+    "admin/savecategory.asp",
+    "admin/savecomment.asp",
+    "admin/savelink.asp",
+    "admin/savepost.asp",
+    "admin/saverelationship.asp",
+    "admin/savetag.asp",
+    "admin/saveuser.asp",
+    "admin/tag.asp",
+    "admin/tags.asp",
+    "admin/templatebottom.asp",
+    "admin/templatetop.asp",
+    "admin/user.asp",
+    "admin/users.asp",
+    "css/admin_screen.css",
+    "css/chrome.css",
+    "css/firefox.css",
+    "css/ie6.css",
+    "css/ie7.css",
+    "css/ie8.css",
+    "css/opera.css",
+    "css/safari.css",
+    "css/screen.css",
+    "downloads/slickcms_db_v2.5.145.zip",
+    "downloads/slickcms_db_v2.6.147.zip",
+    "downloads/slickcms_db_v2.7.160.zip",
+    "downloads/slickcms_site_v2.5.145.zip",
+    "downloads/slickcms_site_v2.6.147.zip",
+    "downloads/slickcms_site_v2.7.160.zip",
+    "images/lg-share-en.gif",
+    "images/microsoft.png",
+    "images/powered_by_slickcms.png",
+    "images/slickcms_logo_2010.png",
+    "images/slickcms_logo_2010_small.png",
+    "images/valid-rss.png",
+    "images/valid-rss.png.old",
+    "images/valid-xhtml11-blue.png",
+    "images/vcss-blue.gif",
+    "scripts/slickcms.js",
+    "slickcms/captcha.asp",
+    "slickcms/category.asp",
+    "slickcms/clean.asp",
+    "slickcms/comment.asp",
+    "slickcms/feed.asp",
+    "slickcms/global.asp",
+    "slickcms/image.asp",
+    "slickcms/link.asp",
+    "slickcms/md5.asp",
+    "slickcms/post.asp",
+    "slickcms/relationship.asp",
+    "slickcms/slickcms.asp",
+    "slickcms/statistic.asp",
+    "slickcms/tag.asp",
+    "slickcms/url.asp",
+    "slickcms/user.asp",
+    "sql/README.md",
+    "sql/slickcms-sql-2008-mdf-and-ldf.zip",
+    "upload/default.asp",
+    "upload/transfer.aspx",
+    "upload/transfer.aspx.vb",
+    "upload/upload.aspx",
+    "upload/upload.aspx.vb",
+    "wmd/showdown.js",
+    "wmd/wmd-buttons.png",
+    "wmd/wmd.css",
+    "wmd/wmd.js"
+  ],
+  "includes": {
+    "content.asp": [
+      "contact.asp",
+      "comments.asp"
+    ],
+    "default.asp": [
+      "footer.asp",
+      "header.asp",
+      "slickcms/slickcms.asp",
+      "content.asp",
+      "sidebar.asp"
+    ],
+    "errorhandler.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "rss2.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "sitemap.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "admin/categories.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/category.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/comment.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/comments.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/default.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deletecategory.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deletecomment.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deletelink.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deletepost.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deleterelationship.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deletetag.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/deleteuser.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/feeds.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/forgotpassword.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "admin/link.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/links.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/login.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "admin/logout.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "admin/post.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/posts.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/register.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "admin/relationship.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/relationships.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/savecategory.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/savecomment.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/savelink.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/savepost.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/saverelationship.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/savetag.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/saveuser.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/tag.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/tags.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/templatetop.asp": [
+      "slickcms/slickcms.asp"
+    ],
+    "admin/user.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "admin/users.asp": [
+      "admin/templatetop.asp",
+      "admin/templatebottom.asp"
+    ],
+    "slickcms/slickcms.asp": [
+      "slickcms/tag.asp",
+      "slickcms/url.asp",
+      "slickcms/comment.asp",
+      "slickcms/link.asp",
+      "slickcms/feed.asp",
+      "slickcms/global.asp",
+      "slickcms/post.asp",
+      "slickcms/statistic.asp",
+      "slickcms/clean.asp",
+      "slickcms/user.asp",
+      "slickcms/md5.asp",
+      "slickcms/captcha.asp",
+      "slickcms/category.asp",
+      "slickcms/image.asp",
+      "slickcms/relationship.asp"
+    ]
+  },
+  "routes": [],
+  "data_access": {
+    "slickcms/category.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/comment.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/feed.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/global.asp": [
+      "Server.CreateObject(\"ADODB.Connection\")"
+    ],
+    "slickcms/image.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/link.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/post.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/relationship.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/slickcms.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/statistic.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/tag.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ],
+    "slickcms/user.asp": [
+      "Server.CreateObject(\"ADODB.RecordSet\")"
+    ]
+  },
+  "sql_dialect": {
+    "content.asp": [
+      "\"\n       \n        Select Case objPost.UrlType\n            Case \""
+    ],
+    "slickcms/category.asp": [
+      "\"Select Count(*) From dbo.Categories\""
+    ],
+    "slickcms/comment.asp": [
+      "\"Select [Title],[URL] = CASE [Pageable] When 1 Then Replace(convert(varchar, [DateCreated], 111), '/', '-') + '/' + [URL] Else [URL] End From dbo.Posts Where PostID = \"",
+      "\"Select COUNT(*) As [Total] From [Comments] Where [PostID] = \"",
+      "\"Select Count(*) From dbo.Comments\""
+    ],
+    "slickcms/image.asp": [
+      "\"Select Name, Alt, Title, Orientation From Images Where Album = '\""
+    ],
+    "slickcms/link.asp": [
+      "\"Select Count(*) From dbo.Links\""
+    ],
+    "slickcms/post.asp": [
+      "\"\n\n\t\t\tSelect Case m_UrlType\n                Case \"",
+      "\"Select Count(*) From dbo.Posts\""
+    ],
+    "slickcms/relationship.asp": [
+      "\"Select CategoryID, Name From dbo.Categories Order By Name Asc\"",
+      "\"Select Count(*) From dbo.Relationships\"",
+      "\"Select TagID, Name From dbo.Tags Order By Name Asc\"",
+      "\"Select LinkID, Name From dbo.Links Order By Name Asc\"",
+      "\"Select PostID, Title From dbo.Posts Order By Title Asc\"",
+      "\"Select UserID, Name From dbo.Users Order By Name Asc\""
+    ],
+    "slickcms/slickcms.asp": [
+      "\"Select [Email] From dbo.Users Where [Active] = 1\""
+    ],
+    "slickcms/tag.asp": [
+      "\"Select Count(*) From dbo.Tags\""
+    ],
+    "slickcms/user.asp": [
+      "\"Select Count(*) From dbo.Users\"",
+      "\"Select [UserID], [Name] From dbo.Users Where [Active] = 1 Order By [Name] Asc\""
+    ]
+  },
+  "session_state": {
+    "comments.asp": [
+      "UserID",
+      "Name",
+      "LoggedOn",
+      "Email",
+      "Comment",
+      "URL"
+    ],
+    "contact.asp": [
+      "Name",
+      "Comment",
+      "Email",
+      "EmailSent"
+    ],
+    "content.asp": [
+      "Error",
+      "LoggedOn",
+      "EmailSent",
+      "Message"
+    ],
+    "default.asp": [
+      "Name",
+      "Comment",
+      "Email",
+      "EmailSent"
+    ],
+    "footer.asp": [
+      "Name",
+      "LoggedOn"
+    ],
+    "admin/forgotpassword.asp": [
+      "Error",
+      "Message"
+    ],
+    "admin/login.asp": [
+      "Error",
+      "Message"
+    ],
+    "admin/post.asp": [
+      "UserID"
+    ],
+    "admin/register.asp": [
+      "Error",
+      "Message"
+    ],
+    "admin/saveuser.asp": [
+      "Error"
+    ],
+    "admin/templatetop.asp": [
+      "Name",
+      "Error",
+      "Message"
+    ],
+    "slickcms/comment.asp": [
+      "LoggedOn"
+    ],
+    "slickcms/global.asp": [
+      "Theme"
+    ],
+    "slickcms/slickcms.asp": [
+      "EmailSent"
+    ],
+    "slickcms/user.asp": [
+      "EmailSent",
+      "UserID",
+      "Error",
+      "Admin",
+      "Message",
+      "Name",
+      "LoggedOn",
+      "Email",
+      "URL"
+    ],
+    "upload/default.asp": [
+      "LoggedOn"
+    ]
+  },
+  "deadcode": [
+    "comments.asp",
+    "contact.asp",
+    "content.asp",
+    "default.asp",
+    "errorexample.asp",
+    "errorhandler.asp",
+    "footer.asp",
+    "header.asp",
+    "rss2.asp",
+    "server.asp",
+    "session.asp",
+    "sidebar.asp",
+    "sitemap.asp",
+    "admin/categories.asp",
+    "admin/category.asp",
+    "admin/comment.asp",
+    "admin/comments.asp",
+    "admin/default.asp",
+    "admin/deletecategory.asp",
+    "admin/deletecomment.asp",
+    "admin/deletelink.asp",
+    "admin/deletepost.asp",
+    "admin/deleterelationship.asp",
+    "admin/deletetag.asp",
+    "admin/deleteuser.asp",
+    "admin/feeds.asp",
+    "admin/forgotpassword.asp",
+    "admin/link.asp",
+    "admin/links.asp",
+    "admin/login.asp",
+    "admin/logout.asp",
+    "admin/post.asp",
+    "admin/posts.asp",
+    "admin/register.asp",
+    "admin/relationship.asp",
+    "admin/relationships.asp",
+    "admin/savecategory.asp",
+    "admin/savecomment.asp",
+    "admin/savelink.asp",
+    "admin/savepost.asp",
+    "admin/saverelationship.asp",
+    "admin/savetag.asp",
+    "admin/saveuser.asp",
+    "admin/tag.asp",
+    "admin/tags.asp",
+    "admin/templatebottom.asp",
+    "admin/templatetop.asp",
+    "admin/user.asp",
+    "admin/users.asp",
+    "slickcms/captcha.asp",
+    "slickcms/category.asp",
+    "slickcms/clean.asp",
+    "slickcms/comment.asp",
+    "slickcms/feed.asp",
+    "slickcms/global.asp",
+    "slickcms/image.asp",
+    "slickcms/link.asp",
+    "slickcms/md5.asp",
+    "slickcms/post.asp",
+    "slickcms/relationship.asp",
+    "slickcms/slickcms.asp",
+    "slickcms/statistic.asp",
+    "slickcms/tag.asp",
+    "slickcms/url.asp",
+    "slickcms/user.asp",
+    "upload/default.asp"
+  ],
+  "schema": "CREATE TABLE [tblForms] (\n    [FieldID] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [FormID] INTEGER,\n    [FieldName] TEXT,\n    [FieldLabel] TEXT,\n    [FieldType] TEXT,\n    [FieldValue] TEXT,\n    [FieldValidation] TEXT,\n    [FieldDescription] TEXT,\n    [CustomAttributes] TEXT,\n    [FieldSortOrder] INTEGER,\n    [CreatedDate] TEXT,\n    [ModifiedDate] TEXT\n);\n\nCREATE TABLE [tblGlobalSettings] (\n    [SettingId] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [SettingCategory] TEXT,\n    [SettingName] TEXT,\n    [SettingValue] TEXT,\n    [ValueType] TEXT,\n    [ValidationRule] TEXT,\n    [SettingDescription] TEXT,\n    [SortOrder] INTEGER,\n    [CreationDate] TEXT,\n    [ModifiedDate] TEXT\n);\n\nCREATE TABLE [tblLog] (\n    [Id] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [Description] TEXT,\n    [Date] TEXT\n);\n\nCREATE TABLE [tblModules] (\n    [ID] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [Active] INTEGER,\n    [Name] TEXT,\n    [Description] TEXT,\n    [Type] INTEGER,\n    [StyleID] TEXT,\n    [StyleClass] TEXT,\n    [StyleInline] TEXT,\n    [PageIDs] TEXT,\n    [CustomSettings] TEXT,\n    [SortOrder] INTEGER,\n    [Location] TEXT\n);\n\nCREATE TABLE [tblModuleTypes] (\n    [Disabled] INTEGER,\n    [ModID] INTEGER,\n    [ModName] TEXT,\n    [ModHandler] TEXT,\n    [ModDescription] TEXT\n);\n\nCREATE TABLE [tblPageContent] (\n    [ContentID] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [PageID] INTEGER,\n    [PageContent] TEXT,\n    [ModifiedDate] TEXT\n);\n\nCREATE TABLE [tblPages] (\n    [PageID] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [Active] INTEGER,\n    [PageName] TEXT,\n    [PageFileName] TEXT,\n    [PageLinkHoverText] TEXT,\n    [PageDescription] TEXT,\n    [PageKeywords] TEXT,\n    [MainMenu] INTEGER,\n    [PageTitle] TEXT,\n    [MenuIndex] INTEGER,\n    [ParentPage] INTEGER,\n    [Style] TEXT,\n    [CreateDate] TEXT\n);\n\nCREATE TABLE [tblProducts] (\n    [Key] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [PID] TEXT,\n    [Category] TEXT,\n    [Brand] TEXT,\n    [ProductLine] TEXT,\n    [ProductName] TEXT,\n    [Options] TEXT,\n    [ShortDescription] TEXT,\n    [LongDescription] TEXT,\n    [RetailPrice] INTEGER,\n    [WholesalePrice] INTEGER,\n    [Image1] TEXT,\n    [Image2] TEXT,\n    [Active] INTEGER,\n    [Recommended] INTEGER,\n    [Timestamp] TEXT\n);\n\nCREATE TABLE [tblTestimonials] (\n    [ID] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [Active] INTEGER,\n    [Name] TEXT,\n    [Email] TEXT,\n    [ShowEmail] INTEGER,\n    [SortOrder] INTEGER,\n    [Comments] TEXT,\n    [Location] TEXT,\n    [TestimonialDate] TEXT,\n    [Timestamp] TEXT\n);\n\nCREATE TABLE [tblUserRoles] (\n    [id] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [Name] TEXT,\n    [Description] TEXT,\n    [Level] INTEGER\n);\n\nCREATE TABLE [tblUsers] (\n    [id] INTEGER PRIMARY KEY AUTOINCREMENT,\n    [UserID] TEXT,\n    [Password] TEXT,\n    [LastLogin] TEXT,\n    [Disabled] INTEGER,\n    [Description] TEXT,\n    [FirstName] TEXT,\n    [SecondName] TEXT,\n    [Email] TEXT,\n    [Phone] TEXT,\n    [Address1] TEXT,\n    [Address2] TEXT,\n    [City] TEXT,\n    [State] TEXT,\n    [PostalCode] TEXT,\n    [Country] TEXT,\n    [Role] INTEGER\n);\n"
+}

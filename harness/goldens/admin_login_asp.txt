@@ -1,0 +1,95 @@
+STATUS: 200
+---
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<script type="text/javascript"><!--
+// <![CDATA[
+function placeFocus() {
+if (document.forms.length > 0) {
+	var field = document.forms[0];
+	for (i = 0; i < field.length; i++) {
+		var input = field.elements[i]
+		if ((input.type == "text") || (input.type == "textarea") ||	(input.type == "password")) {
+			if (input.value == "") {
+				input.focus();
+				break;
+			}
+		} else if (input.type == "submit") {
+			input.focus();
+			break;
+		}
+	}
+}
+return true;
+}
+// ]]>
+--></script>
+<head>
+<title> Administer Login | ASP VBScript CMS [ASP VBScript CMS 0.6]</title>
+<link rel="stylesheet" href="http://localhost/cms/admin/styles/admin.css" type="text/css"/>
+<link rel="stylesheet" href="http://localhost/cms/admin/styles/login.css" type="text/css"/>
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/wiki/jameswilson/asp-vbscript-cms/files/favicon.ico"/>
+</head>
+<body onload="placeFocus()">
+<div id="page">
+  <div id="header" class="clearfix">
+      <h1>ASP VBScript CMS</h1>
+
+ <div class="provider">
+  <a href="http://asp-vbscript-cms.googlecode.com" title="ASP VBScript CMS" class="logo"><img class="provider" src="http://localhost/cms/admin/images/cms_logo_transparent.gif" alt="ASP VBScript CMS" title="ASP VBScript CMS: "/></a>
+  <h1><a href="http://asp-vbscript-cms.googlecode.com" title="ASP VBScript CMS" class="logo">ASP VBScript CMS</a>: Site Administrator</h1>
+
+ </div>
+
+  </div>
+  <div id="content" class="clearfix">
+    <div id="main" class="clearfix">
+      <div class="login">
+        <h1>ASP VBScript CMS: Site Administrator</h1>
+
+				
+        <p>Access to the Content Management System on Classic ASP administration panel is restricted.  You must log in with an account that has site administration rights to edit site content.</p>
+        <form class="login" action="login.asp" method="post" id="login">
+          <fieldset>
+          <legend>Please Login</legend>
+          <input name="action" value="login" type="hidden"/>
+          <div class="required">
+            <label for="UserName" title="Please enter your username in the following textbox.">
+            User Name</label>
+            <input class="inputText" name="UserID" id="UserID" type="text" value=""/>
+          </div>
+          <div class="required">
+            <label for="Password" title="Please enter your password in the following textbox.">
+            Password</label>
+            <input class="inputText" name="Password" id="Password" type="password" value=""/>
+          </div>
+          <div class="optional">
+            <label for="RememberMe" class="labelCheckbox" title="Remember my login information on this computer">
+            <input  name="RememberMe" id="RememberMe" class="inputCheckbox" type="checkbox" value="ON"/>
+            Remember me on this computer.</label>
+						<small class="options"><a href="#quick-loans" onclick="window.open('help/cookies.asp','help','scrollbars=no,menubar=no,height=400,width=200,resizable=yes,toolbar=no,location=no,status=no');" title="Find out more about a faster login.">what's this?</a></small>
+          </div>
+					<div class="submit">
+						<div>
+							<input class="button inputSubmit" type="submit" title="submit" value="Enter &raquo;"/>
+						</div>
+					</div>
+          </fieldset>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  <div id="footer" class="clearfix">
+    <div>
+ <div class="about"></div>
+</div>
+
+  </div>
+</div>
+</body>
+</html>
