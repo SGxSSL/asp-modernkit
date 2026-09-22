@@ -2,7 +2,7 @@
 
 project:
   name: "Sonata ASP to .NET Modernization"
-  legacy_root: "d:/Sonata/asp/slickcms-classic-asp"
+  legacy_root: "d:/Sonata/asp/asp-vbscript-cms"
   db_engine: "sqlite"
   
 targets:
@@ -15,9 +15,30 @@ harness:
 
 
 slices:
-  slickcms_test:
-    description: "Core CMS logic test slice for slickcms"
+  public_read:
+    description: "Public content read path (page render, navigation)"
     endpoints:
-      - "slickcms/slickcms.asp"
-      - "slickcms/user.asp"
-      - "slickcms/post.asp"
+      - "public/default.asp"
+      - "public/about.asp"
+      - "public/contact.asp"
+      - "public/products.asp"
+      - "public/testimonials.asp"
+      
+  admin_crud:
+    description: "Admin pages CRUD and login"
+    endpoints:
+      - "public/admin/default.asp"
+      - "public/admin/login.asp"
+      - "public/admin/admin_home.asp"
+      - "public/admin/unavailable.asp"
+      - "public/admin/db/default.asp"
+      - "public/admin/users/default.asp"
+      - "public/admin/settings/default.asp"
+      - "public/admin/content/default.asp"
+      - "public/admin/modules/default.asp"
+      - "public/admin/pages/default.asp"
+      - "public/admin/pages/pages.asp"
+      - "public/admin/pages/pages_add.asp"
+      - "public/admin/pages/pages_view.asp"
+      - "public/admin/pages/pages_edit.asp"
+      - "public/admin/pages/pages_form.asp"

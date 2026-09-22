@@ -2,11 +2,10 @@ import urllib.request
 import urllib.parse
 import http.cookiejar
 import os
-import hashlib
-import re
-
+import os
 import yaml
 import sys
+import re
 
 # Config
 AKIT_YAML = r"d:\Sonata\asp\asp-modernkit\akit.yaml"
@@ -20,9 +19,21 @@ config = load_config()
 harness_cfg = config.get("harness", {})
 BASE_URL = harness_cfg.get("legacy_url", "http://localhost/cms")
 
+# Figure out the relative web root so we can strip it from file paths
+legacy_root = config.get("project", {}).get("legacy_root", "").replace("\\", "/")
+public_dir = harness_cfg.get("public_dir", "").replace("\\", "/")
+web_prefix = ""
+if public_dir and legacy_root and public_dir.startswith(legacy_root):
+    web_prefix = public_dir[len(legacy_root):].strip("/") + "/"
+
 ENDPOINTS = []
 for slice_name, slice_data in config.get("slices", {}).items():
     for ep in slice_data.get("endpoints", []):
+        # Convert the file path (e.g. public/default.asp) to a web URL path (e.g. /default.asp)
+        ep = ep.replace("\\", "/")
+        if web_prefix and ep.startswith(web_prefix):
+            ep = ep[len(web_prefix):]
+            
         if not ep.startswith("/"):
             ep = "/" + ep
         ENDPOINTS.append(ep)
