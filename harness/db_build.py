@@ -5,9 +5,21 @@ import shutil
 import os
 import datetime
 
+import yaml
+import sys
+
 # Config
-BASE_URL = "http://localhost/cms/export.asp"
-PUBLIC_DIR = r"d:\Sonata\asp\asp-vbscript-cms\public"
+AKIT_YAML = r"d:\Sonata\asp\asp-modernkit\akit.yaml"
+
+def load_config():
+    with open(AKIT_YAML, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
+
+config = load_config()
+harness_cfg = config.get("harness", {})
+
+BASE_URL = harness_cfg.get("legacy_url", "http://localhost/cms") + "/export.asp"
+PUBLIC_DIR = harness_cfg.get("public_dir", r"d:\Sonata\asp\asp-vbscript-cms\public")
 EXPORT_SCRIPT = r"d:\Sonata\asp\asp-modernkit\harness\export.asp"
 DB_DIR = r"d:\Sonata\asp\asp-modernkit\db"
 

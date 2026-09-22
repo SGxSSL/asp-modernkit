@@ -1,5 +1,0 @@
-<Project>
-  <Target Name="Restore" BeforeTargets="Build">
-    <MSBuild Projects="$(MSBuildThisFileDir)\backend\backend.csproj" Properties="Restore:True" />
-  </Target>
-</Project>

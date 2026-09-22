@@ -16,6 +16,10 @@ targets:
   backend: "backend-dotnet-clean"
   frontend: "frontend-react-ts"
 
+harness:
+  legacy_url: "http://localhost/cms"
+  public_dir: "C:/absolute/path/to/legacy/repo/public"
+
 slices:
   auth_module:
     description: "Handles user login and registration"
@@ -30,7 +34,13 @@ slices:
       - "catalog/view.asp"
 ```
 
-## 2. How to Manually Write Slices
+## 2. The Harness Configuration
+
+If you want to use the automated `akit capture` or `akit db build` commands, you must configure the `harness` block:
+- **`legacy_url`**: The URL where your legacy ASP application is currently running locally. The orchestrator uses this to crawl your endpoints and capture the baseline output.
+- **`public_dir`**: The absolute path to the publicly accessible web root of the legacy application. The `db build` tool needs this so it can drop an `export.asp` script into your web root to extract the database over HTTP.
+
+## 3. How to Manually Write Slices
 
 When modernizing a massive legacy monolith, you cannot feed the entire repository to the AI at once. You must break it down into "Slices".
 
@@ -39,7 +49,7 @@ When modernizing a massive legacy monolith, you cannot feed the entire repositor
 3. **Define the Slice**: Create a new key under `slices:` in the YAML file.
 4. **Add Endpoints**: List the entry point `.asp` files under the `endpoints:` array. *Note: You only need to list the top-level files! The `bundler.py` will automatically read `facts.json` and recursively pull in all necessary `#include` files (like `db_connect.inc`).*
 
-## 3. Future Roadmap: Automating `akit.yaml`
+## 4. Future Roadmap: Automating `akit.yaml`
 
 Currently, creating the YAML slices is a manual, human-driven architectural process. However, the Devkit is architected to support automated slicing in the future using one of these three approaches:
 

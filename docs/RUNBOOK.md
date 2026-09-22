@@ -16,13 +16,21 @@ $env:OPENROUTER_API_KEY="sk-or-your-api-key"
 
 ## 3. The Orchestration Pipeline
 
-### Step 1: Facts Extraction
+### Step 1: Test Harness (Optional)
+Extract the legacy database schema to SQLite and capture baseline "Golden Master" HTTP traces so you can validate the AI's future output.
+*(Ensure your legacy application is running locally before executing these!)*
+```bash
+python cli/akit.py db build
+python cli/akit.py capture
+```
+
+### Step 2: Facts Extraction
 Point the static analyzer at your legacy Classic ASP repository to extract the architecture, includes, and SQL dependencies into `facts.json`.
 ```bash
 python cli/akit.py facts --source "C:\path\to\legacy\repo" --out facts.json
 ```
 
-### Step 2: Define Slices
+### Step 3: Define Slices
 Open `akit.yaml` and define logical "slices" (groups of legacy endpoints) that you want to modernize together.
 ```yaml
 slices:
@@ -32,19 +40,19 @@ slices:
       - "orders/process.asp"
 ```
 
-### Step 3: Architecture Spec Generation
+### Step 4: Architecture Spec Generation
 Run the AI orchestrator to design the C# Domain Models and API contracts based on the legacy slice.
 ```bash
 python cli/akit.py spec my_new_slice
 ```
 
-### Step 4: Implementation Plan Generation
+### Step 5: Implementation Plan Generation
 Generate the granular `.cs` and `.tsx` file checklist.
 ```bash
 python cli/akit.py plan my_new_slice
 ```
 
-### Step 5: Code Generation
+### Step 6: Code Generation
 Execute the mass-generation of the actual source code. The output will be saved to `output_my_new_slice/`.
 ```bash
 python cli/akit.py gen my_new_slice

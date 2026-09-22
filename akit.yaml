@@ -9,6 +9,11 @@ targets:
   backend: "backend-dotnet-clean"
   frontend: "frontend-react-ts"
 
+harness:
+  legacy_url: "http://localhost/cms"
+  public_dir: "d:/Sonata/asp/asp-vbscript-cms/public"
+
+
 slices:
   slickcms_test:
     description: "Core CMS logic test slice for slickcms"

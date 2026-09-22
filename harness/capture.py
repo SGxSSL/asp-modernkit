@@ -5,32 +5,31 @@ import os
 import hashlib
 import re
 
+import yaml
+import sys
+
 # Config
-BASE_URL = "http://localhost/cms"
+AKIT_YAML = r"d:\Sonata\asp\asp-modernkit\akit.yaml"
 GOLDENS_DIR = r"d:\Sonata\asp\asp-modernkit\harness\goldens"
 
-ENDPOINTS = [
-    "/",
-    "/about.asp",
-    "/contact.asp",
-    "/products.asp",
-    "/testimonials.asp",
-    "/admin/",
-    "/admin/login.asp",
-    "/admin/admin_home.asp",
-    "/admin/unavailable.asp",
-    "/admin/db/",
-    "/admin/users/",
-    "/admin/settings/",
-    "/admin/content/",
-    "/admin/modules/",
-    "/admin/pages/",
-    "/admin/pages/pages.asp",
-    "/admin/pages/pages_add.asp",
-    "/admin/pages/pages_view.asp",
-    "/admin/pages/pages_edit.asp",
-    "/admin/pages/pages_form.asp"
-]
+def load_config():
+    with open(AKIT_YAML, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
+
+config = load_config()
+harness_cfg = config.get("harness", {})
+BASE_URL = harness_cfg.get("legacy_url", "http://localhost/cms")
+
+ENDPOINTS = []
+for slice_name, slice_data in config.get("slices", {}).items():
+    for ep in slice_data.get("endpoints", []):
+        if not ep.startswith("/"):
+            ep = "/" + ep
+        ENDPOINTS.append(ep)
+
+# De-duplicate endpoints
+ENDPOINTS = list(set(ENDPOINTS))
+
 
 def normalize_html(html):
     """

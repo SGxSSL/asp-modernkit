@@ -296,6 +296,27 @@ def cmd_report(args):
     except Exception as e:
         print(f"Error reading ledger: {e}")
 
+import subprocess
+
+def cmd_capture(args):
+    script_path = os.path.join(devkit_root, 'harness', 'capture.py')
+    print("Running Golden Trace Capture...")
+    try:
+        subprocess.run([sys.executable, script_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error running capture.py: {e}")
+
+def cmd_db(args):
+    if args.db_command == "build":
+        script_path = os.path.join(devkit_root, 'harness', 'db_build.py')
+        print("Running Database Export and SQLite Build...")
+        try:
+            subprocess.run([sys.executable, script_path], check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Error running db_build.py: {e}")
+    else:
+        print("Usage: akit db build")
+
 def main():
     parser = argparse.ArgumentParser(description="ASP Modernization Devkit CLI")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
@@ -340,6 +361,10 @@ def main():
         cmd_gen(args)
     elif args.command == "report":
         cmd_report(args)
+    elif args.command == "capture":
+        cmd_capture(args)
+    elif args.command == "db":
+        cmd_db(args)
     elif args.command:
         print(f"Command '{args.command}' is scaffolded but not yet implemented.")
     else:
