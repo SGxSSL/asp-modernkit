@@ -32,9 +32,10 @@ The core orchestrator is written entirely in Python and requires zero external c
 ### Working Directories (Generated at Runtime)
 These folders act as caches and logs dynamically populated during the migration pipeline:
 - `bundles/`: Caches the aggregated JSON payload representing a specific slice (e.g., `admin_crud.json`) before it is sent to the LLM.
-- `docs/`: Stores permanent documentation (`RUNBOOK.md`, `RETROSPECTIVE.md`) and the generated intermediate architectural designs (`SPEC_*.md` and `PLAN_*.md`).
+- `docs/`: Stores permanent, human-authored documentation (`RUNBOOK.md`, `HOWTO_akit_yaml.md`).
+- `generated_docs/`: Automatically stores the AI-generated intermediate architectural designs and planning checklists (`SPEC_*.md`, `PLAN_*.md`, and raw LLM outputs).
 - `prompts/`: A temporary storage cache for the highly-optimized text prompts right before they are dispatched to the LLM. 
-- `telemetry/`: Contains the `ledger.csv`, which tracks your LLM token usage and calculates the real-time financial cost of running the AI models.
+- `telemetry/`: Contains `token_ledger.json`, which tracks your LLM token usage and calculates the real-time financial cost of running the AI models.
 
 ### Output Destination
 - When code generation is complete, the devkit automatically scaffolds new directories at the root (e.g., `output_admin_crud/`). Inside, you will find fully containerized `backend/` (.NET) and `frontend/` (React) repositories that are ready to compile and run.

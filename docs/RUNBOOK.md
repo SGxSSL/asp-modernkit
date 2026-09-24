@@ -17,7 +17,7 @@ $env:OPENROUTER_API_KEY="sk-or-your-api-key"
 ## 3. The Orchestration Pipeline
 
 ### Step 1: Test Harness (Optional)
-Extract the legacy database schema to SQLite and capture baseline "Golden Master" HTTP traces so you can validate the AI's future output.
+Extract the "legacy database schema to SQLite and capture baseline "Golden Master" HTTP traces so you can validate the AI's future output.
 *(Ensure your legacy application is running locally before executing these!)*
 ```bash
 python cli/akit.py db build

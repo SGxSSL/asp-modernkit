@@ -53,7 +53,7 @@ def generate_completion(prompt, model="gpt-4o"):
         # Log token usage to ledger
         usage = result.get('usage', {})
         if usage:
-            ledger_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'docs', 'token_ledger.json')
+            ledger_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'telemetry', 'token_ledger.json')
             os.makedirs(os.path.dirname(ledger_path), exist_ok=True)
             ledger_entry = {
                 "timestamp": __import__('datetime').datetime.utcnow().isoformat(),

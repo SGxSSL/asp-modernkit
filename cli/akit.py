@@ -13,7 +13,7 @@ import bundler
 import llm
 
 def ensure_dirs():
-    dirs = ['docs', 'prompts', 'bundles']
+    dirs = ['docs', 'prompts', 'bundles', 'generated_docs', 'telemetry']
     for d in dirs:
         path = os.path.join(devkit_root, d)
         os.makedirs(path, exist_ok=True)
@@ -118,7 +118,7 @@ Here is the context bundle containing exactly the code for this slice:
     print("Calling LLM (this may take a minute)...")
     try:
         spec = llm.generate_completion(prompt)
-        out_path = os.path.join(devkit_root, 'docs', f'SPEC_{args.slice}.md')
+        out_path = os.path.join(devkit_root, 'generated_docs', f'SPEC_{args.slice}.md')
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(spec)
         print(f"Spec successfully generated at {out_path}")
@@ -131,7 +131,7 @@ def cmd_plan(args):
     print(f"Generating bundle for slice '{args.slice}'...")
     bundle = b.generate_bundle(args.slice)
     
-    spec_path = os.path.join(devkit_root, 'docs', f'SPEC_{args.slice}.md')
+    spec_path = os.path.join(devkit_root, 'generated_docs', f'SPEC_{args.slice}.md')
     spec_content = "Spec not found. Proceeding without architectural spec."
     if os.path.exists(spec_path):
         with open(spec_path, 'r', encoding='utf-8') as f:
@@ -162,7 +162,7 @@ Here is the legacy context bundle:
     print("Calling LLM (this may take a minute)...")
     try:
         plan = llm.generate_completion(prompt)
-        out_path = os.path.join(devkit_root, 'docs', f'PLAN_{args.slice}.md')
+        out_path = os.path.join(devkit_root, 'generated_docs', f'PLAN_{args.slice}.md')
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(plan)
         print(f"Plan successfully generated at {out_path}")
@@ -175,8 +175,8 @@ def cmd_gen(args):
     print(f"Generating bundle for slice '{args.slice}'...")
     bundle = b.generate_bundle(args.slice)
     
-    spec_path = os.path.join(devkit_root, 'docs', f'SPEC_{args.slice}.md')
-    plan_path = os.path.join(devkit_root, 'docs', f'PLAN_{args.slice}.md')
+    spec_path = os.path.join(devkit_root, 'generated_docs', f'SPEC_{args.slice}.md')
+    plan_path = os.path.join(devkit_root, 'generated_docs', f'PLAN_{args.slice}.md')
     
     spec_content = open(spec_path, 'r', encoding='utf-8').read() if os.path.exists(spec_path) else "No Spec."
     plan_content = open(plan_path, 'r', encoding='utf-8').read() if os.path.exists(plan_path) else "No Plan."
@@ -231,7 +231,7 @@ Begin generating the files now using exactly the requested XML format.
         output = llm.generate_completion(prompt)
         
         # Save raw output for debugging
-        raw_out_path = os.path.join(devkit_root, 'docs', f'GEN_RAW_{args.slice}.md')
+        raw_out_path = os.path.join(devkit_root, 'generated_docs', f'GEN_RAW_{args.slice}.md')
         with open(raw_out_path, 'w', encoding='utf-8') as f:
             f.write(output)
             
@@ -266,7 +266,7 @@ Begin generating the files now using exactly the requested XML format.
         print(f"LLM Error: {e}")
 
 def cmd_report(args):
-    ledger_path = os.path.join(devkit_root, 'docs', 'token_ledger.json')
+    ledger_path = os.path.join(devkit_root, 'telemetry', 'token_ledger.json')
     if not os.path.exists(ledger_path):
         print("No token ledger found. Run generation commands first.")
         return
